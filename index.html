@@ -1,15 +1,465 @@
-<html>
-    <h1>
-        Um site sobre um designer
-    </h1>
-    <body style="background-color: black;color:aliceblue;">
-        <h2>Sobre</h2>
-        <p>
-            Me chamo Luimar, adoro estudar sobre tecnologia, design, automóveis e fabricação. 
-        </p>
-        <h2>É só o começo, ainda vai melhorar!</h2>
-        <p>
-            Esse site  poderia ser melhor, não? Talvez eu devesse <a target="_blank" HREF="https://www.w3schools.com/html/default.asp">estudar um pouco mais de HTML para isso!!!</a>
-        </p>
-    </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>SupDilsan</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="images/favicon.svg" />
+  
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="css/OwlCarousel.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- responsive style -->
+  <link rel="stylesheet" href="css/responsive.css" />
+  
+  <!--SimpleLightbox Stylesheet-->
+  <link rel="stylesheet" href="css/SimpleLightbox.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+<!-- header section strats -->
+<div class="hero_area">
+  <header class="header_section">
+    <a name="header"></a>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="'Sup Dilsan" />
+        </a>
+
+<!-- menu responsive section -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-2">
+            <li class="nav-item active">
+              <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#do">Atuação</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portifólio </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+<!-- end menu responsive section -->
+
+        <div class="call_btn">
+          <a href="https://wa.me/5531975200390">
+            +553197520-0390
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+<!-- slider section -->
+  <section class="slider_section">
+    <div class="container-fluid">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-3 col-lg-2 offset-md-2">
+                <div class="detail-box">
+                  <h1>
+                    Sua identidade bem cuidada
+                  </h1>
+                  <p>
+                    Toda marca precisa ser cuidada para que possa 
+                    atingir o público certo e de forma eficaz.
+                  </p>
+                  <div>
+                    <a href="#about">
+                      Saiba mais
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-8">
+                <div class="img-box">
+                  <img src="images/supd-1.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-3 col-lg-2 offset-md-2">
+                <div class="detail-box">
+                  <h1>
+                    Criação para todas as mídias
+                  </h1>
+                  <p>
+                    Eficiência na criação de materiais para os mais diversos tipos de mídias.
+                  </p>
+                  <div>
+                    <a href="#about">
+                      Saiba mais
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-8">
+                <div class="img-box">
+                  <img src="images/supd-2.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- end slider section -->
+<!-- end header section -->
+
+<!-- custom menu -->
+<div class="custom_menu-container">
+  <a name="about"></a>
+  <div class="container">
+    <div class="custom_menu justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link pl-0" href="#header">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#do">Atuação</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portifólio </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contato</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </div>
+<!-- custom menu -->
+
+<!-- about section -->
+<section class="about_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <div class="img-box">
+          <img src="images/about-ldm.png" alt="" />
+        </div>
+      </div>
+      <div class="col-md-5">
+          <div class="custom_heading-container">
+            <h2>
+              Sobre
+            </h2>
+          </div>
+          <p>
+            Sou um designer apaixonado por criar experiências visuais que 
+            conectam marcas e pessoas. Com uma trajetória no marketing e 
+            uma visão estratégica, combino estética e funcionalidade para 
+            desenvolver identidades visuais, materiais gráficos e projetos 
+            digitais impactantes. Minha experiência também inclui a gestão 
+            de equipes e ações voltadas para o crescimento de negócios, 
+            sempre com um olhar atento ao público-alvo e às tendências do 
+            mercado. Atualmente, concentro meus esforços em traduzir ideias 
+            em design, tornando conceitos abstratos em soluções visuais 
+            que contam histórias e geram resultados.
+          </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end about section -->
+
+<!-- do section -->
+<section class="do_section layout_padding2-top">
+  <a name="do"></a>
+  <div class="container">
+    <div class="custom_heading-container2">
+      <h2>
+        Atuação
+      </h2>
+    </div>
+    <div class="row layout_padding2-bottom">
+      <div class="col-md-4 col-sm-6">
+          <div class="content-box img">
+            <img src="images/sd_icon_1.png" alt="" />
+          </div>
+          <div class="detail-box">
+            <h6>
+              Design Digital e Web
+            </h6>
+            <p>
+              Desenvolvimento de interfaces visuais para sites e landing pages, 
+              criando experiências digitais que aliam estética 
+              e usabilidade. Cada projeto é pensado para fortalecer 
+              a presença online e aprimorar a interação com o público.
+            </p>
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="content-box img">
+            <img src="images/sd_icon_2.png" alt="" />
+          </div>
+          <div class="detail-box">
+            <h6>
+              Design Gráfico e Estratégia Visual
+            </h6>
+            <p>
+              Criação de peças visuais para campanhas publicitárias, 
+              redes sociais e materiais institucionais. Meu trabalho vai além 
+              do design, alinhando comunicação visual à identidade da marca para 
+              transmitir mensagens com clareza e impacto.
+            </p>
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+          <div class="content-box img">
+            <img src="images/sd_icon_3.png" alt="" />
+          </div>
+          <div class="detail-box">
+            <h6>
+              Identidade Visual e Branding
+            </h6>
+            <p>
+              Construção de marcas sólidas e memoráveis, desde a criação de 
+              logotipos até a definição de elementos visuais, paleta de cores e 
+              estilo de comunicação. O objetivo é garantir consistência e 
+              reconhecimento em todos os pontos de contato da marca.
+            </p>
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+          <div class="content-box img">
+            <img src="images/sd_icon_4.png" alt="" />
+          </div>
+          <div class="detail-box">
+            <h6>
+              Motion Design e Animações
+            </h6>
+            <p>
+              Desenvolvimento de animações para redes sociais, apresentações e 
+              vídeos institucionais. Elementos gráficos em movimento ajudam a 
+              captar a atenção do público e tornam a comunicação mais dinâmica 
+              e envolvente.
+            </p>
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+          <div class="content-box img">
+            <img src="images/sd_icon_5.png" alt="" />
+          </div>
+          <div class="detail-box">
+            <h6>
+              Apresentações e Design de Dados
+            </h6>
+            <p>
+              Criação de apresentações profissionais e infográficos, 
+              traduzindo informações complexas em narrativas visuais 
+              claras e impactantes. Seja para reuniões, relatórios ou 
+              conteúdos educacionais, o objetivo é tornar a comunicação 
+              mais eficaz.
+            </p>
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+          <div class="content-box img">
+            <img src="images/sd_icon_6.png" alt="" />
+          </div>
+          <div class="detail-box">
+            <h6>
+              Gestão de Mídia e Conteúdo Visual
+            </h6>
+            <p>
+              Desenvolvimento de criativos estratégicos para 
+              campanhas de mídia paga e orgânica, otimizando 
+              o engajamento e a conversão do público-alvo.
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end do section -->  
+
+<!-- portfolio section -->
+<a name="portfolio"></a>
+<!-- portfolio section --> 
+<section class="portfolio_section layout_padding2-top">
+  <div class="container layout_padding2-bottom">
+    <div class="custom_heading-container">
+      <h2>
+        Portifólio
+      </h2>
+    </div>
+  </div>
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-4 col-sm-6 p-0">
+              <a class="portfolio-box" href="images/supd-1.png" title="Project Name">
+                  <img class="img-fluid" src="images/p-4.png" alt="..." />
+                  <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                  </div>
+              </a>
+          </div>
+          <div class="col-lg-4 col-sm-6 p-0">
+              <a class="portfolio-box" href="images/p-5.png" title="Project Name">
+                  <img class="img-fluid" src="images/p-5.png" alt="..." />
+                  <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                  </div>
+              </a>
+          </div>
+          <div class="col-lg-4 col-sm-6 p-0">
+              <a class="portfolio-box" href="images/p-4.png" title="Project Name">
+                  <img class="img-fluid" src="images/p-4.png" alt="..." />
+                  <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                  </div>
+              </a>
+          </div>
+          <div class="col-lg-4 col-sm-6 p-0">
+              <a class="portfolio-box" href="images/p-5.png" title="Project Name">
+                  <img class="img-fluid" src="images/p-5.png" alt="..." />
+                  <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                  </div>
+              </a>
+          </div>
+          <div class="col-lg-4 col-sm-6 p-0">
+              <a class="portfolio-box" href="images/p-4.png" title="Project Name">
+                  <img class="img-fluid" src="images/p-4.png" alt="..." />
+                  <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                  </div>
+              </a>
+          </div>
+          <div class="col-lg-4 col-sm-6 p-0">
+              <a class="portfolio-box" href="images/p-5.png" title="Project Name">
+                  <img class="img-fluid" src="images/p-5.png" alt="..." />
+                  <div class="portfolio-box-caption p-3">
+                      <div class="project-category text-white-50">Category</div>
+                      <div class="project-name">Project Name</div>
+                  </div>
+              </a>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- end portfolio section -->
+
+<!-- contact section -->
+<section class="contact_section layout_padding">
+  <a name="contact"></a>
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-10">
+        <div class="custom_heading-container2">
+          <h2>
+            Contato
+          </h2>
+        </div>
+        <form action="https://formspree.io/f/mjkgprez" method="POST">
+          <div>
+            <input type="text" name="nome" placeholder="Nome" required />
+          </div>
+          <div>
+            <input type="email" name="email" placeholder="E-mail" required />
+          </div>
+          <div>
+            <input type="text" name="telefone" placeholder="Telefone" />
+          </div>
+          <div>
+            <textarea name="mensagem" class="message-box" placeholder="Mensagem" required></textarea>
+          </div>
+          <div class="d-flex mt-4">
+            <button type="submit">
+              ENVIAR
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end contact section -->
+
+<!-- info section -->
+<section class="info_section">
+  <div class="container layout_padding2-top layout_padding2-bottom">
+      <div class="row d-flex justify-content-center">
+      <div class="col-md-6 col-lg-3">
+        <div class="info_contact">              
+          <div>
+            <h5>
+              <a href="https://wa.me/5531975200390">+55 31975200390</a>
+            </h5>
+            <h5>
+              <a href="mailto:luimar.mota@gmail.com">luimar.mota@gmail.com</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+</section>
+<!-- end info_section -->
+
+<!-- footer section -->
+<footer class="footer_section container-fluid">
+  <p>
+    &copy; 2025 All Rights Reserved By
+    <a href="https://www.linkedin.com/in/luimar-mota/">Luimar Dilsan Mota</a>
+  </p>
+</footer>
+<!-- end footer section -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/circles.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/custom-scripts.js"></script>
+  <script src="js/simpleLightbox.js"></script>
+
+</body>
+
 </html>
