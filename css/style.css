@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -341,7 +343,12 @@ a:focus {
   overflow: hidden;
 }
 
-.portfolio_section .container-fluid .portfolio-box .portfolio-box-caption, .container-sm .portfolio-box .portfolio-box-caption, .container-md .portfolio-box .portfolio-box-caption, .container-lg .portfolio-box .portfolio-box-caption, .container-xl .portfolio-box .portfolio-box-caption, .container-xxl .portfolio-box .portfolio-box-caption {
+.portfolio_section .container-fluid .portfolio-box .portfolio-box-caption, 
+.container-sm .portfolio-box .portfolio-box-caption, 
+.container-md .portfolio-box .portfolio-box-caption, 
+.container-lg .portfolio-box .portfolio-box-caption, 
+.container-xl .portfolio-box .portfolio-box-caption, 
+.container-xxl .portfolio-box .portfolio-box-caption {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -353,22 +360,22 @@ a:focus {
   text-align: center;
   opacity: 0;
   color: #dadada;
-  background: rgba(238, 28, 56, 0.5);
+  background: rgba(80, 80, 80, 0.7);
   transition: opacity 0.25s ease;
   text-align: center;
 }
 
-.portfolio_section .container-fluid .portfolio-box .portfolio-box-caption .project-category, .container-sm .portfolio-box .portfolio-box-caption .project-category, .container-md .portfolio-box .portfolio-box-caption .project-category, .container-lg .portfolio-box .portfolio-box-caption .project-category, .container-xl .portfolio-box .portfolio-box-caption .project-category, .container-xxl .portfolio-box .portfolio-box-caption .project-category {
+.portfolio_section .container-fluid .portfolio-box .portfolio-box-caption .project-category {
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.portfolio_section .container-fluid .portfolio-box .portfolio-box-caption .project-name, .container-sm .portfolio-box .portfolio-box-caption .project-name, .container-md .portfolio-box .portfolio-box-caption .project-name, .container-lg .portfolio-box .portfolio-box-caption .project-name, .container-xl .portfolio-box .portfolio-box-caption .project-name, .container-xxl .portfolio-box .portfolio-box-caption .project-name {
+.portfolio_section .container-fluid .portfolio-box .portfolio-box-caption .project-name {
   font-size: 1.2rem;
 }
 
-.portfolio_section .container-fluid .portfolio-box:hover .portfolio-box-caption, .container-sm .portfolio-box:hover .portfolio-box-caption, .container-md .portfolio-box:hover .portfolio-box-caption, .container-lg .portfolio-box:hover .portfolio-box-caption, .container-xl .portfolio-box:hover .portfolio-box-caption, .container-xxl .portfolio-box:hover .portfolio-box-caption {
+.portfolio_section .container-fluid .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
 
