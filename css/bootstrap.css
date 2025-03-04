@@ -545,7 +545,7 @@ pre code {
   overflow-y: scroll;
 }
 
-.container {
+/*.container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -575,9 +575,9 @@ pre code {
   .container {
     max-width: 1140px;
   }
-}
+}*/
 
-.container-fluid {
+/*.container-fluid {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -592,7 +592,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-}
+}*/
 
 .no-gutters {
   margin-right: 0;
