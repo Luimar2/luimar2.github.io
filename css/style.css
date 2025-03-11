@@ -133,7 +133,7 @@ body {
 
 .hero_area {
   height: 100vh;
-  /*background-image: url(../images/supd-bg.png);*/
+  /*background-image: url(../images/supd-bg.webp);*/
 }
 
 .sub_page .hero_area {
@@ -228,7 +228,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-toggler .navbar-toggler-icon {
-  background-image: url(../images/menu.png);
+  background-image: url(../images/menu.webp);
   background-size: 55px;
 }
 /*end navbar section*/
