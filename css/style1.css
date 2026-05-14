@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+*,:after,:before {
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb
+}
+
+:root {
+    --cor-bg: #09090b;
+    --cor-pri: #18181B;
+    --cor-sec: #28282b;
+    --cor-ter: #3f3f46;
+    --cor-quat: #212124;
+    --cor-txt: #a3a3a3;
+    --cor-txthover: #fff;
+    --fonte: 'League Spartan', sans-serif;
+  }
+
+body {
+    font-family: var(--fonte);
+    background-color: var(--cor-bg);
+    scroll-behavior: smooth;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    height: 100%;
+  }
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: transparent;
+    padding: 15px 0;
+    transition: 0.3s;
+    z-index: auto;
+}
+.logo {
+    display: flex;
+    height: 40px;
+    width: 100%;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    background: var(--cor-pri);
+    width: auto;
+    border-radius: 25px;
+    border: 1px solid var(--cor-sec);
+    
+}
+.menu a {
+    padding: 1px 10px;
+    display: flex;
+    text-decoration: none;
+    color: var(--cor-txt);
+    transition: 0.3s;
+}
+.menu a:hover {
+    color: var(--cor-txthover);
+}
+.menu_home {
+    background: var(--cor-ter);
+    border-radius: 18px;
+    padding: 7px 10px;
+    color: var(--cor-txthover);
+    border: 1px solid var(--cor-sec);
+}
+.menu_var {
+    padding: 7px 10px;
+}
+/*
+.menu {
+    display: none;
+    flex-direction: column;
+    background: red;
+    position: relative;
+    width: auto;
+    top: 25px;
+    padding: 10px 0;
+}
+.menu a {
+    padding: 15px;
+    width: 50%;
+    display: block;
+
+}
+.menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.menu-icon div {
+    width: 30px;
+    height: 3px;
+    background: #dcdcdc;
+    margin: 6px;
+    transition: 0.3s;
+}
+.menu-active .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.menu-active .bar2 {
+    opacity: 0;
+}
+.menu-active .bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+.menu-active .menu {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .menu-icon {
+        display: none;
+    }
+}
+*/
+
+
+#home { background: #e0e0e0; }
+#sobre { background: #d0d0d0; }
+#portifolio { background: #c0c0c0; }
+#contato { background: #b0b0b0; }

@@ -2,506 +2,190 @@
 <html lang="pt-BR">
 
 <head>
-  <title>SupDilsan</title>
-  <!-- Favicon-->
-  <link rel="icon" type="image/x-icon" href="images/favicon.svg" />
-
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-  <!-- Site Metas -->
-  <meta name="keywords" content="Luimar Dilsan Mota, designer gráfico, marketing digital, criação de estampas, branding, identidade visual" />
-  <meta name="description" content="Luimar Dilsan Mota é designer e profissional de marketing, especialista em identidade visual e criação de estampas automotivas. Conheça seu trabalho!" />
-  <meta name="author" content="Luimar Dilsan Mota" />
-  <meta name="robots" content="index, follow" />
-
-  <!--Open Graph-->
-  <meta property="og:title" content="Luimar Dilsan Mota | Designer e Profissional de Marketing" />
-  <meta property="og:description" content="Especialista em design gráfico e marketing digital, Luimar Dilsan Mota cria estampas exclusivas para camisetas automotivas. Saiba mais sobre seu trabalho!" />
-  <meta property="og:image" content="https://supdilsan.com.br/images/dilsan-mota.jpg" />
-  <meta property="og:url" content="https://supdilsan.com.br" />
-  <meta property="og:type" content="website" />
-
-  <!--Twitter Card-->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Luimar Dilsan Mota | Designer e Profissional de Marketing" />
-  <meta name="twitter:description" content="Designer especializado em identidade visual e estampas automotivas. Conheça o trabalho de Luimar Dilsan Mota!" />
-  <meta name="twitter:image" content="https://supdilsan.com.br/images/dilsan-mota.jpg" />
-  <meta name="twitter:url" content="https://supdilsan.com.br" />
-  <meta name="twitter:site" content="@luimar2" />
-
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-M9GGHBT5');</script>
-  <!-- End Google Tag Manager -->
-
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="css/OwlCarousel.css" />
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-  <!-- Custom styles for this template -->
-  <link rel="stylesheet" href="css/style.css" />
-
-  <!-- responsive style -->
-  <link rel="stylesheet" href="css/responsive.css" />
-
-  <!--SimpleLightbox Stylesheet-->
-  <link rel="stylesheet" href="css/SimpleLightbox.css" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700|Roboto:400,700&display=swap"
-    rel="stylesheet" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luimar Mota — Especialista em banco de dados, dashboards e análise de dados. Transformo dados em decisões.">
+    <title>Luimar Mota — Dados & Dashboards</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9GGHBT5" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-  <!-- header section strats -->
-  <div class="hero_area">
-    <header class="header_section">
-      <a name="header"></a>
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo.webp" alt="'Sup Dilsan" />
-          </a>
-
-          <!-- menu responsive section -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mr-2">
-              <li class="nav-item active">
-                <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">Sobre</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#do">Atuação</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Portifólio </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contato</a>
-              </li>
-            </ul>
-          </div>
-          <!-- end menu responsive section -->
-
-          <div class="call_btn">
-            <a href="https://wa.me/5531975200390">
-              +553197520-0390
-            </a>
-          </div>
+    <header class="header wrapper">
+        <a class="logo" href="index.html" title="Luimar Mota" aria-label="Ir para o início"></a>
+        <nav id="site-navigation" aria-label="Navegação Principal">
+            <div class="menu-primary-navigation-container">
+                <ul id="primary-menu" class="menu">
+                    <li class="current-menu-item"><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li class="menu-cta"><a href="https://wa.me/5531975200390" target="_blank" rel="noopener noreferrer">Contrate-me</a></li>
+                </ul>
+            </div>
         </nav>
-      </div>
+        <!-- Menu mobile dropdown -->
+        <div class="dw-dropdown dw-dropdown-end md:hidden" aria-label="Menu">
+            <div tabindex="0" class="button main-menu-button" role="button" aria-expanded="false" aria-label="Abrir menu">
+                <div class="primary-dropdown-icon"></div>
+            </div>
+            <div class="menu-primary-navigation-container">
+                <ul tabindex="0" id="primary-mobile-menu" class="menu dw-dropdown-content menu primary-dropdown-menu"
+                    aria-label="Menu de navegação">
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li class="menu-cta"><a href="https://wa.me/5531975200390" target="_blank" rel="noopener noreferrer">Contrate-me</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
-    <!-- slider section -->
-    <section class="slider_section">
-      <div class="container-fluid">
-        <div class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="custom_slider_section custom_slider_sectionB offset_slider_section">
-                  <div class="detail-box">
-                    <h1>
-                      Criação de Conteúdo Estratégico
-                    </h1>
-                    <p>
-                      Transforme suas redes sociais em uma poderosa ferramenta de engajamento. Design que conecta,
-                      comunica e converte!
-                    </p>
+    <main class="wrapper z-0">
+        <!-- Hero / Apresentação -->
+        <section id="sobre" class="content-area" aria-label="Apresentação">
+            <h1 class="home-heading">
+                Transformo dados em decisões.<br>
+                Banco de dados, dashboards e análises que geram resultado.
+            </h1>
+            <p>
+                Sou especialista em <strong>modelagem de banco de dados</strong>, <strong>criação de dashboards</strong> e <strong>análise de dados</strong>. 
+                Meu trabalho é entregar clareza: seja uma base bem estruturada, um painel que mostra o que importa ou uma análise que aponta o próximo passo certo para o seu negócio.
+            </p>
+            <p>
+                Se você precisa que seus dados funcionem de verdade — não apenas existam —, vamos conversar.
+                <a href="https://wa.me/5531975200390" target="_blank" rel="noopener noreferrer">Fale comigo agora →</a>
+            </p>
+        </section>
+
+        <hr class="mt-12 md:mt-16">
+
+        <!-- Projetos -->
+        <section id="projetos" class="section" aria-label="Projetos">
+            <h2 class="section-heading">Projetos</h2>
+            <div class="block-container">
+                <a class="block-projects-list-project design-vault" href="projeto-hospitalar.html">
+                    <span class="block-projects-list-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor" d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-7 14a1 1 0 0 1-1-1v-3H8a1 1 0 0 1 0-2h3V8a1 1 0 0 1 2 0v3h3a1 1 0 0 1 0 2h-3v3a1 1 0 0 1-1 1z"/>
+                        </svg>
+                    </span>
                     <div>
-                      <a href="#about">
-                        Saiba mais
-                      </a>
+                        <div class="title">Gestão Hospitalar — Banco de Dados</div>
+                        <div class="description">Modelagem e estruturação de banco de dados para área hospitalar, com foco em eficiência operacional e rastreabilidade de dados clínicos.</div>
                     </div>
-                  </div>
-                </div>
-                <div class="custom_slider_sectionC custom_slider_sectionD">
-                  <div class="img-box">
-                    <img src="images/supdilsan01.webp" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="custom_slider_section custom_slider_sectionB offset_slider_section">
-                  <div class="detail-box">
-                    <h1>
-                      Design que Impacta
-                    </h1>
-                    <p>
-                      Identidade visual forte e comunicação visual estratégica. Do conceito à criação, destacamos sua
-                      marca com originalidade.
-                    </p>
+                </a>
+                <a class="block-projects-list-project good-aesthetic-club" href="projeto-marketing.html">
+                    <span class="block-projects-list-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor" d="M22 12c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2s10 4.48 10 10zM6.5 17h2v-7h-2v7zm5-2h2V7h-2v8zm5 4h2v-5h-2v5z"/>
+                        </svg>
+                    </span>
                     <div>
-                      <a href="#about">
-                        Saiba mais
-                      </a>
+                        <div class="title">Performance de Marketing — Dashboard & Análise</div>
+                        <div class="description">Dashboard interativo e análise de dados para performance em marketing, com métricas de ROI, CAC, LTV e canais de aquisição.</div>
                     </div>
-                  </div>
-                </div>
-                <div class="custom_slider_sectionC custom_slider_sectionD">
-                  <div class="img-box">
-                    <img src="images/supdilsan02.webp" alt="" />
-                  </div>
-                </div>
-              </div>
+                </a>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  <!-- end slider section -->
-  <!-- end header section -->
+        </section>
 
-  <!-- custom menu -->
-  <div class="custom_menu-container">
-    <a name="about"></a>
-    <div class="container">
-      <div class="custom_menu justify-content-center">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link pl-0" href="#header">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">Sobre</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#do">Atuação</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portifólio </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contato</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- custom menu -->
+        <hr class="mt-12 md:mt-16">
 
-  <!-- about section -->
-  <section class="about_section layout_padding">
-    <div class="container">
-      <div class="row">
-        <div class="curtom_about_section">
-          <div class="img-box">
-            <img src="images/about-ldm.webp" alt="" />
-          </div>
-        </div>
-        <div class="curtom_about_section">
-          <div class="custom_heading-container">
-            <h2>
-              Sobre
-            </h2>
-          </div>
-          <p>
-            Sou designer e especialista em marketing com 20 anos de experiência em branding, campanhas digitais e gestão
-            de tráfego pago. Minha atuação vai além da estética: foco em estratégia, identidade visual e conexão entre
-            marcas e público.
-
-            Além do design, minha paixão por automóveis clássicos me levou a criar uma loja de camisetas voltada para
-            entusiastas do mundo automotivo, onde aplico meu conhecimento em design e marketing para transformar
-            histórias e referências icônicas em estampas exclusivas.
-
-            Seja desenvolvendo identidades visuais, campanhas estratégicas ou produtos criativos, meu objetivo é sempre
-            unir inovação, autenticidade e impacto visual.
-
-          <p>👉 Conheça minha loja: <a href="https://reserva.ink/supdilsan" target="_blank"
-              rel="noopener noreferrer">Sup Dilsan Camisetas</a>
-          </p>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end about section -->
-
-  <!-- do section -->
-  <section class="do_section layout_padding2-top">
-    <a name="do"></a>
-    <div class="container">
-      <div class="custom_heading-container2">
-        <h2>
-          Atuação
-        </h2>
-      </div>
-      <div class="row layout_padding2-bottom">
-        <div class="custom_do_section">
-          <div class="do_section_box">
-            <img src="images/sd_icon_1.webp" alt="" />
-          </div>
-          <div class="do_section_header">
-            <h6>
-              Design Digital e Web
-            </h6>
-            <p>
-              Desenvolvimento de interfaces visuais para sites e landing pages,
-              criando experiências digitais que aliam estética
-              e usabilidade. Cada projeto é pensado para fortalecer
-              a presença online e aprimorar a interação com o público.
-            </p>
-          </div>
-        </div>
-        <div class="custom_do_section">
-          <div class="do_section_box">
-            <img src="images/sd_icon_2.webp" alt="" />
-          </div>
-          <div class="do_section_header">
-            <h6>
-              Design Gráfico e Estratégia Visual
-            </h6>
-            <p>
-              Criação de peças visuais para campanhas publicitárias,
-              redes sociais e materiais institucionais. Meu trabalho vai além
-              do design, alinhando comunicação visual à identidade da marca para
-              transmitir mensagens com clareza e impacto.
-            </p>
-          </div>
-        </div>
-        <div class="custom_do_section">
-          <div class="do_section_box">
-            <img src="images/sd_icon_3.webp" alt="" />
-          </div>
-          <div class="do_section_header">
-            <h6>
-              Identidade Visual e Branding
-            </h6>
-            <p>
-              Construção de marcas sólidas e memoráveis, desde a criação de
-              logotipos até a definição de elementos visuais, paleta de cores e
-              estilo de comunicação. O objetivo é garantir consistência e
-              reconhecimento em todos os pontos de contato da marca.
-            </p>
-          </div>
-        </div>
-        <div class="custom_do_section">
-          <div class="do_section_box">
-            <img src="images/sd_icon_4.webp" alt="" />
-          </div>
-          <div class="do_section_header">
-            <h6>
-              Motion Design e Animações
-            </h6>
-            <p>
-              Desenvolvimento de animações para redes sociais, apresentações e
-              vídeos institucionais. Elementos gráficos em movimento ajudam a
-              captar a atenção do público e tornam a comunicação mais dinâmica
-              e envolvente.
-            </p>
-          </div>
-        </div>
-        <div class="custom_do_section">
-          <div class="do_section_box">
-            <img src="images/sd_icon_5.webp" alt="" />
-          </div>
-          <div class="do_section_header">
-            <h6>
-              Apresentações e Design de Dados
-            </h6>
-            <p>
-              Criação de apresentações profissionais e infográficos,
-              traduzindo informações complexas em narrativas visuais
-              claras e impactantes. Seja para reuniões, relatórios ou
-              conteúdos educacionais, o objetivo é tornar a comunicação
-              mais eficaz.
-            </p>
-          </div>
-        </div>
-        <div class="custom_do_section">
-          <div class="do_section_box">
-            <img src="images/sd_icon_6.webp" alt="" />
-          </div>
-          <div class="do_section_header">
-            <h6>
-              Gestão de Mídia e Conteúdo Visual
-            </h6>
-            <p>
-              Desenvolvimento de criativos estratégicos para
-              campanhas de mídia paga e orgânica, otimizando
-              o engajamento e a conversão do público-alvo.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end do section -->
-
-  <!-- portfolio section -->
-  <a name="portfolio"></a>
-  <!-- portfolio section -->
-  <section class="portfolio_section layout_padding2-top">
-    <div class="container layout_padding2-bottom">
-      <div class="custom_heading-container">
-        <h2>
-          Portifólio
-        </h2>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-4 col-sm-6 p-0">
-          <a class="portfolio-box" href="images/img-santo-mascote.webp" title="Identidade Santo Mascote">
-            <img class="img-fluid" src="images/thumb-santo-mascote.webp" alt="Identidade Santo Mascote" />
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">Identidade Visual</div>
-              <div class="project-name">Petshop Santo Mascote</div>
+        <!-- Contato -->
+        <section id="contato" class="section" aria-label="Contato e redes sociais">
+            <h2 class="section-heading">Contato</h2>
+            <div class="row-container block-social-links">
+                <!-- LinkedIn -->
+                <a class="block-social-links-link" href="https://www.linkedin.com/in/luimar-mota" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn de Luimar Mota">
+                    <div class="flex items-center gap-3">
+                        <span class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                <title>LinkedIn</title>
+                                <path fill="currentColor"
+                                    d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+                <!-- Github -->
+                <a class="block-social-links-link" href="https://github.com/Luimar2" target="_blank"
+                    rel="noopener noreferrer" aria-label="GitHub de Luimar Mota">
+                    <div class="flex items-center gap-3">
+                        <span class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                <title>GitHub</title>
+                                <path fill="currentColor"
+                                    d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+                <!-- Instagram -->
+                <a class="block-social-links-link" href="https://www.instagram.com/sup.dilsan" target="_blank"
+                    rel="noopener noreferrer" aria-label="Instagram de Luimar Mota">
+                    <div class="flex items-center gap-3">
+                        <span class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                <title>Instagram</title>
+                                <path fill="currentColor"
+                                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+                <!-- Threads -->
+                <a class="block-social-links-link" href="https://www.threads.net/@luimar2" target="_blank"
+                    rel="noopener noreferrer" aria-label="Threads de Luimar Mota">
+                    <div class="flex items-center gap-3">
+                        <span class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                <title>Threads</title>
+                                <path fill="currentColor"
+                                    d="M186.42,123.65a63.81,63.81,0,0,0-11.13-6.72c-4-29.89-24-39.31-33.1-42.07-19.78-6-42.51,1.19-52.85,16.7a8,8,0,0,0,13.32,8.88c6.37-9.56,22-14.16,34.89-10.27,9.95,3,16.82,10.3,20.15,21a81.05,81.05,0,0,0-15.29-1.43c-13.92,0-26.95,3.59-36.67,10.1C94.3,127.57,88,139,88,152c0,20.58,15.86,35.52,37.71,35.52a48,48,0,0,0,34.35-14.81c6.44-6.7,14-18.36,15.61-37.1.38.26.74.53,1.1.8C186.88,144.05,192,154.68,192,168c0,19.36-20.34,48-64,48-26.73,0-45.48-8.65-57.34-26.44C60.93,175,56,154.26,56,128s4.93-47,14.66-61.56C82.52,48.65,101.27,40,128,40c32.93,0,54,13.25,64.53,40.52a8,8,0,1,0,14.93-5.75C194.68,41.56,167.2,24,128,24,96,24,72.19,35.29,57.34,57.56,45.83,74.83,40,98.52,40,128s5.83,53.17,17.34,70.44C72.19,220.71,96,232,128,232c30.07,0,48.9-11.48,59.4-21.1C200.3,199.08,208,183,208,168,208,149.66,200.54,134.32,186.42,123.65Zm-37.89,38a31.94,31.94,0,0,1-22.82,9.9c-10.81,0-21.71-6-21.71-19.52,0-12.63,12-26.21,38.41-26.21A63.88,63.88,0,0,1,160,128.24C160,142.32,156,153.86,148.53,161.62Z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+                <!-- X (Twitter) -->
+                <a class="block-social-links-link" href="https://x.com/luimar2" target="_blank"
+                    rel="noopener noreferrer" aria-label="X (Twitter) de Luimar Mota">
+                    <div class="flex items-center gap-3">
+                        <span class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                <title>X (Twitter)</title>
+                                <path fill="currentColor"
+                                    d="M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+                <!-- Copiar e-mail -->
+                <a id="copyBtn" onclick="copiarEmail()" class="block-social-links-link" href="#" role="button" aria-label="Copiar e-mail">
+                    <div class="flex items-center gap-3">
+                        <span class="social-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <title>E-mail</title>
+                                <path fill="currentColor"
+                                    d="M17.58 7.37l-1 .66-.57.37c-1.92 1.27-2.4 1.55-3.04 1.7-.66.15-1.33.15-1.99-.01-.64-.16-1.12-.43-3.04-1.71L7.37 8l-1-.67c-.35-.23-.82-.14-1.05.2-.23.34-.14.81.2 1.04l1 .66.56.37c2.09 1.39 2.63 1.7 3.51 1.91.88.21 1.79.21 2.67 0 .88-.22 1.42-.53 3.51-1.92l.56-.38 1-.67c.34-.23.43-.7.2-1.05-.23-.35-.7-.44-1.05-.21ZM9.99 21.74h4c3.65 0 4.51-.08 5.61-.63 1.08-.56 1.96-1.44 2.51-2.52.55-1.1.62-1.96.62-5.62v-2c0-3.66-.08-4.52-.63-5.62-.56-1.09-1.44-1.97-2.52-2.52-1.1-.56-1.96-.63-5.62-.63h-4c-3.66 0-4.52.07-5.62.62-1.09.55-1.97 1.43-2.52 2.51-.56 1.09-.63 1.95-.63 5.61v2c0 3.65.07 4.51.62 5.61.55 1.08 1.43 1.96 2.51 2.51 1.09.55 1.95.62 5.61.62Zm0-1.5c-3.35 0-4.15-.07-4.93-.47-.8-.41-1.45-1.06-1.86-1.86-.4-.79-.47-1.58-.47-4.93v-2c0-3.35.06-4.15.46-4.93.4-.8 1.05-1.45 1.85-1.86.78-.4 1.57-.47 4.92-.47h4c3.34 0 4.14.06 4.92.46.79.4 1.44 1.05 1.85 1.85.39.78.46 1.57.46 4.92v2c0 3.34-.07 4.14-.47 4.92-.41.79-1.06 1.44-1.86 1.85-.79.39-1.58.46-4.93.46h-4Z" />
+                            </svg>
+                        </span>
+                        <div class="w-full flex justify-between">
+                            <span class="flex-1 button-text">Copiar E-mail&nbsp;</span>
+                        </div>
+                    </div>
+                </a>
             </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6 p-0">
-          <a class="portfolio-box" href="images/img-escolha-certa.webp" title="Posts Escolha Certa">
-            <img class="img-fluid" src="images/thumb-escolha-certa.webp" alt="Posts Escolha Certa" />
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">Rede Social</div>
-              <div class="project-name">Drogaria Escolha Certa</div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6 p-0">
-          <a class="portfolio-box" href="images/img-flexfarma.webp" title="Campanha Flexfarma">
-            <img class="img-fluid" src="images/thumb-flexfarma.webp" alt="Campanha Flexfarma" />
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">Campanha e Anúncios</div>
-              <div class="project-name">Drogaria Escolha Certa</div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6 p-0">
-          <a class="portfolio-box" href="images/img-suzuki.webp" title="Anúncios Suzuki">
-            <img class="img-fluid" src="images/thumb-suzuki.webp" alt="Anúncios Suzuki" />
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">Campanha e Anúncios</div>
-              <div class="project-name">Suzuki Automóveis</div>
-            </div>
-          </a>
-        </div>
-        <!--div class="col-lg-4 col-sm-6 p-0">
-          <a class="portfolio-box" href="images/img-sexboobs.webp" title="Identidade Sex Boobs">
-              <img class="img-fluid" src="images/thumb-sexboobs.webp" alt="Identidade Sex Boobs" />
-              <div class="portfolio-box-caption">
-                  <div class="project-category text-white-50">Identidade Visual</div>
-                  <div class="project-name">Sex Boobs Adult Store</div>
-              </div>
-          </a>
-      </div-->
-        <div class="col-lg-4 col-sm-6 p-0">
-          <a class="portfolio-box" href="images/img-casa-remedios.webp" title="Identidade Casa dos Remédios">
-            <img class="img-fluid" src="images/thumb-casa-remedios.webp" alt="Identidade Casa dos Remédios" />
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">Identidade de Loja</div>
-              <div class="project-name">Casa dos Remédios</div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6 p-0">
-          <a class="portfolio-box" href="images/img-santo-remedio.webp" title="Campanha Santo Remédio">
-            <img class="img-fluid" src="images/thumb-santo-remedio.webp" alt="Campanha Santo Remédio" />
-            <div class="portfolio-box-caption p-3">
-              <div class="project-category text-white-50">Campanha e Anúncios</div>
-              <div class="project-name">Drogaria Santo Remédio</div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end portfolio section -->
+        </section>
+    </main>
 
-  <!-- contact section -->
-  <section class="contact_section layout_padding">
-    <a name="contact"></a>
-    <div class="container">
-      <div class="row">
-        <div class="custom_contact_section">
-          <div class="custom_heading-container2">
-            <h2>
-              Contato
-            </h2>
-          </div>
-          <form action="https://formspree.io/f/mjkgprez" method="POST">
-            <div>
-              <input type="text" name="nome" placeholder="Nome" required />
-            </div>
-            <div>
-              <input type="email" name="email" placeholder="E-mail" required />
-            </div>
-            <div>
-              <input type="text" name="telefone" placeholder="Telefone" />
-            </div>
-            <div>
-              <textarea name="mensagem" class="message-box" placeholder="Mensagem" required></textarea>
-            </div>
-            <div class="d-flex mt-4">
-              <button type="submit">
-                ENVIAR
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end contact section -->
-
-  <!-- info section -->
-  <section class="info_section layout_padding2-top layout_padding2-bottom">
-    <div class="container">
-      <h5>
-        <a href="https://wa.me/5531975200390">+55 31975200390</a>
-      </h5>
-      <h5>
-        <a href="mailto:luimar.mota@gmail.com">luimar.mota@gmail.com</a>
-      </h5>
-    </div>
-  </section>
-  <!-- end info_section -->
-
-  <!-- footer section -->
-  <footer class="footer_section">
-    <div class="container">
-      <p>
-        &copy; 2025 All Rights Reserved By
-        <a href="https://www.linkedin.com/in/luimar-mota/">Luimar Dilsan Mota</a>
-      </p>
-    </div>
-  </footer>
-  <!-- end footer section -->
-
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/slide-script.js"></script>
-  <script src="js/menu-custom.js"></script>
-  <script src="js/galery-scripts.js"></script>
-  <script src="js/simpleLightbox.js"></script>
-
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

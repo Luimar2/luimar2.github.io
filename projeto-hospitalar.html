@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto de banco de dados para gestão hospitalar — Luimar Mota.">
+    <title>Gestão Hospitalar — Luimar Mota</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projeto.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header class="header wrapper">
+        <a class="logo" href="index.html" title="Luimar Mota" aria-label="Ir para o início"></a>
+        <nav id="site-navigation" aria-label="Navegação Principal">
+            <div class="menu-primary-navigation-container">
+                <ul id="primary-menu" class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li class="current-menu-item"><a href="index.html#projetos" aria-current="page">Projetos</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                    <li class="menu-cta"><a href="https://wa.me/5531975200390" target="_blank" rel="noopener noreferrer">Contrate-me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="dw-dropdown dw-dropdown-end md:hidden">
+            <div tabindex="0" class="button main-menu-button" role="button" aria-label="Abrir menu">
+                <div class="primary-dropdown-icon"></div>
+            </div>
+            <div class="menu-primary-navigation-container">
+                <ul tabindex="0" id="primary-mobile-menu" class="menu dw-dropdown-content menu primary-dropdown-menu"
+                    aria-label="Menu de navegação">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="index.html#projetos">Projetos</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                    <li class="menu-cta"><a href="https://wa.me/5531975200390" target="_blank" rel="noopener noreferrer">Contrate-me</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="wrapper z-0">
+
+        <!-- Breadcrumb -->
+        <nav class="projeto-breadcrumb" aria-label="Navegação de localização">
+            <a href="index.html#projetos">← Projetos</a>
+        </nav>
+
+        <!-- Header do Projeto -->
+        <section class="content-area projeto-header" aria-label="Visão geral do projeto">
+            <div class="projeto-badge">Banco de Dados · Área da Saúde</div>
+            <h1 class="home-heading">Gestão Hospitalar — Modelagem e Banco de Dados</h1>
+            <p class="projeto-lead">
+                Estruturação completa de banco de dados relacional para operações hospitalares, integrando pacientes, prontuários, leitos, agendamentos e faturamento em um único modelo coeso e escalável.
+            </p>
+
+            <!-- Meta do projeto -->
+            <div class="projeto-meta-grid">
+                <div class="projeto-meta-item">
+                    <span class="projeto-meta-label">Área</span>
+                    <span class="projeto-meta-value">Saúde / Hospital</span>
+                </div>
+                <div class="projeto-meta-item">
+                    <span class="projeto-meta-label">Tecnologia</span>
+                    <span class="projeto-meta-value">PostgreSQL · SQL · Python</span>
+                </div>
+                <div class="projeto-meta-item">
+                    <span class="projeto-meta-label">Tipo</span>
+                    <span class="projeto-meta-value">Banco de Dados Relacional</span>
+                </div>
+                <div class="projeto-meta-item">
+                    <span class="projeto-meta-label">Entregáveis</span>
+                    <span class="projeto-meta-value">Modelo ER · Scripts SQL · Documentação</span>
+                </div>
+            </div>
+        </section>
+
+        <hr class="mt-12 md:mt-16">
+
+        <!-- Problema -->
+        <section class="section projeto-section" aria-label="Problema resolvido">
+            <h2 class="section-heading">O Problema</h2>
+            <p>
+                Hospitais de médio porte frequentemente operam com dados fragmentados em planilhas, sistemas legados e registros em papel. O resultado é perda de informação, retrabalho, dificuldade em auditoria e impossibilidade de visualizar indicadores operacionais em tempo real.
+            </p>
+            <p>
+                Este projeto nasce da necessidade de centralizar e estruturar essas informações em um banco de dados confiável, que sirva de base tanto para operações do dia a dia quanto para análises gerenciais e conformidade regulatória.
+            </p>
+        </section>
+
+        <hr class="mt-12 md:mt-16">
+
+        <!-- Solução -->
+        <section class="section projeto-section" aria-label="Solução desenvolvida">
+            <h2 class="section-heading">A Solução</h2>
+            <p>
+                Desenvolvimento de modelo de dados relacional normalizado (3FN), cobrindo as principais entidades do fluxo hospitalar:
+            </p>
+            <div class="block-container projeto-entidades">
+                <div class="projeto-entidade-item">
+                    <div class="title">Pacientes & Prontuários</div>
+                    <div class="description">Cadastro unificado com histórico clínico, internações, diagnósticos e exames vinculados por chave única.</div>
+                </div>
+                <div class="projeto-entidade-item">
+                    <div class="title">Leitos & Internações</div>
+                    <div class="description">Controle de ocupação, transferências e alta hospitalar com rastreabilidade por período.</div>
+                </div>
+                <div class="projeto-entidade-item">
+                    <div class="title">Agendamentos & Consultas</div>
+                    <div class="description">Gestão de agenda médica com controle de status, tempo de espera e cancelamentos.</div>
+                </div>
+                <div class="projeto-entidade-item">
+                    <div class="title">Faturamento & Convênios</div>
+                    <div class="description">Tabela de procedimentos integrada ao TUSS/CBHPM, com controle de glosas e faturamento por convênio.</div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="mt-12 md:mt-16">
+
+        <!-- Mídia / Screenshots -->
+        <section class="section projeto-media-section" aria-label="Demonstração do projeto">
+            <h2 class="section-heading">Demonstração</h2>
+            <div class="projeto-media-wrap">
+
+                <!--
+                    INSTRUÇÃO: Substitua os placeholders abaixo pelas suas imagens ou gifs.
+
+                    Para imagem estática:
+                    <img src="assets/hospitalar-modelo-er.png" alt="Modelo ER do banco de dados hospitalar">
+
+                    Para gif animado:
+                    <img src="assets/hospitalar-demo.gif" alt="Demonstração do banco de dados hospitalar">
+
+                    Para vídeo (MP4):
+                    <video src="assets/hospitalar-demo.mp4" autoplay loop muted playsinline></video>
+
+                    Dica: salve os arquivos na pasta assets/ e ajuste o src.
+                -->
+
+                <!-- Screenshot 1 — tela cheia (ex: modelo ER ou painel principal) -->
+                <div class="projeto-media-item">
+                    <img
+                        src="assets/hospitalar-01.gif"
+                        alt="Demonstração do banco de dados hospitalar"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                    >
+                    <div class="projeto-media-placeholder" style="display:none;">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor" d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-1 14H6l3.5-4.5 2.5 3 3.5-4.5L18 17z"/>
+                        </svg>
+                        Insira aqui um gif ou screenshot do projeto<br>
+                        <small>Ex: modelo ER, consulta SQL, painel de dados</small>
+                    </div>
+                    <div class="projeto-media-caption">Modelo entidade-relacionamento — visão geral das tabelas e vínculos do sistema hospitalar.</div>
+                </div>
+
+                <!-- Screenshots menores lado a lado (ex: queries, relatórios) -->
+                <div class="projeto-media-wrap two-col">
+                    <div class="projeto-media-item">
+                        <img
+                            src="assets/hospitalar-02.gif"
+                            alt="Consulta SQL de internações"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                        >
+                        <div class="projeto-media-placeholder" style="display:none;">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-1 14H6l3.5-4.5 2.5 3 3.5-4.5L18 17z"/>
+                            </svg>
+                            Screenshot 2
+                        </div>
+                        <div class="projeto-media-caption">Consulta de internações por período com filtro de convênio.</div>
+                    </div>
+                    <div class="projeto-media-item">
+                        <img
+                            src="assets/hospitalar-03.gif"
+                            alt="Relatório de ocupação de leitos"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                        >
+                        <div class="projeto-media-placeholder" style="display:none;">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-1 14H6l3.5-4.5 2.5 3 3.5-4.5L18 17z"/>
+                            </svg>
+                            Screenshot 3
+                        </div>
+                        <div class="projeto-media-caption">Relatório de taxa de ocupação de leitos por ala.</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="mt-12 md:mt-16">
+
+        <!-- Resultados / Impacto -->
+        <section class="section projeto-section" aria-label="Resultados e impacto">
+            <h2 class="section-heading">Resultados</h2>
+            <div class="projeto-resultados-grid">
+                <div class="projeto-resultado-item">
+                    <span class="projeto-resultado-numero">–70%</span>
+                    <span class="projeto-resultado-desc">Redução de inconsistências nos dados de pacientes</span>
+                </div>
+                <div class="projeto-resultado-item">
+                    <span class="projeto-resultado-numero">+40%</span>
+                    <span class="projeto-resultado-desc">Velocidade na geração de relatórios gerenciais</span>
+                </div>
+                <div class="projeto-resultado-item">
+                    <span class="projeto-resultado-numero">100%</span>
+                    <span class="projeto-resultado-desc">Rastreabilidade de internações e procedimentos</span>
+                </div>
+            </div>
+            <p style="margin-top: 1.5rem;">
+                O modelo foi desenvolvido com escalabilidade em mente: novos módulos (farmácia, RH, faturamento eletrônico) podem ser integrados sem reestruturar o núcleo do banco.
+            </p>
+        </section>
+
+        <hr class="mt-12 md:mt-16">
+
+        <!-- CTA -->
+        <section class="section projeto-cta" aria-label="Próximos passos">
+            <h2 class="section-heading">Precisa de algo parecido?</h2>
+            <p>Cada negócio tem suas particularidades. Vamos conversar sobre como posso estruturar dados que realmente funcionem para o seu contexto.</p>
+            <a href="https://wa.me/5531975200390" target="_blank" rel="noopener noreferrer" class="projeto-cta-btn">
+                Falar sobre o meu projeto →
+            </a>
+        </section>
+
+        <!-- Navegação entre projetos -->
+        <section class="section projeto-nav" aria-label="Outros projetos">
+            <a href="projeto-marketing.html" class="projeto-nav-link">
+                <span class="projeto-nav-label">Próximo projeto</span>
+                <span class="projeto-nav-title">Performance de Marketing →</span>
+            </a>
+        </section>
+
+    </main>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

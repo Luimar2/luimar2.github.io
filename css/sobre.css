@@ -1,0 +1,175 @@
+/* ============================================
+   PÁGINA SOBRE — estilos específicos
+   ============================================ */
+
+/* Hero: foto + texto lado a lado no desktop */
+.about-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width: 600px) {
+    .about-hero {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2.5rem;
+    }
+}
+
+/* Container da foto */
+.about-photo-wrap {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background-color: #e8e8e8;
+    border: 2px solid rgba(238, 28, 56, 0.2);
+}
+
+@media (min-width: 600px) {
+    .about-photo-wrap {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .about-photo-wrap {
+        background-color: #4B4747;
+    }
+}
+
+/* Foto real */
+.about-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+/* Placeholder quando não há foto */
+.about-photo-placeholder {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #ADADAD;
+    font-size: 10px;
+    text-align: center;
+    gap: 4px;
+}
+
+.about-photo-placeholder svg {
+    width: 48px;
+    height: 48px;
+}
+
+/* Área de texto do hero */
+.about-intro {
+    flex: 1;
+}
+
+.about-intro .home-heading {
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .about-intro .home-heading {
+        font-size: 26px;
+    }
+}
+
+/* Link CTA na página sobre */
+.about-cta {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.25rem;
+    background-color: rgb(238 28 56);
+    color: rgb(241 241 241) !important;
+    border-radius: 9999px;
+    text-decoration: none !important;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.about-cta:hover {
+    background-color: rgb(178 14 39);
+    color: rgb(250 250 250) !important;
+}
+
+/* Serviços — reutiliza visual dos projetos */
+.about-service-item {
+    position: relative;
+    display: flex;
+    min-height: 80px;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    line-height: 1.25rem;
+}
+
+.about-service-item .title {
+    margin-bottom: 2px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.about-service-item .description {
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.025em;
+    color: rgb(113 113 122);
+}
+
+@media (min-width: 768px) {
+    .about-service-item .description {
+        font-size: 13px;
+    }
+}
+
+/* Grid de skills/ferramentas */
+.about-skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.about-skill-tag {
+    display: inline-block;
+    padding: 0.35rem 0.85rem;
+    border-radius: 9999px;
+    border: 1px solid rgb(218 218 218);
+    background-color: rgb(241 241 241);
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(82 82 91);
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.about-skill-tag:hover {
+    border-color: rgb(238 28 56 / 0.4);
+    background-color: rgb(238 28 56 / 0.06);
+    color: rgb(178 14 39);
+}
+
+@media (prefers-color-scheme: dark) {
+    .about-skill-tag {
+        border-color: #4B4747;
+        background-color: rgb(75 71 71);
+        color: #ADADAD;
+    }
+
+    .about-skill-tag:hover {
+        border-color: rgb(238 28 56 / 0.5);
+        color: rgb(243 96 116);
+    }
+}
