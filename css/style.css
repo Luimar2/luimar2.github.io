@@ -1692,6 +1692,20 @@ hr {
     padding-right: 1rem
 }
 
+.copy-email-link > .flex {
+    justify-content: center;
+    width: 100%
+}
+
+.copy-email-link .gap-3 {
+    gap: 0
+}
+
+.copy-email-link .w-full {
+    flex: 0 0 0;
+    width: 0
+}
+
 .copy-email-link .button-text {
     position: absolute;
     width: 1px;
