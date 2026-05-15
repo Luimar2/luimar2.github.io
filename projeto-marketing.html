@@ -315,7 +315,7 @@
                 </a>
 
                 <!-- Copiar e-mail -->
-                <a id="copyBtn" onclick="copiarEmail()" class="block-social-links-link" href="#" role="button" aria-label="Copiar e-mail">
+                <a id="copyBtn" onclick="copiarEmail(event)" class="block-social-links-link copy-email-link" href="#" role="button" aria-label="Copiar e-mail" title="Copiar e-mail">
                     <div class="flex items-center gap-3">
                         <span class="social-icon">
                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -325,7 +325,8 @@
                             </svg>
                         </span>
                         <div class="w-full flex justify-between">
-                            <span class="flex-1 button-text">Copiar E-mail&nbsp;</span>
+                            <span class="flex-1 button-text">Copiar e-mail</span>
+                            <span class="copy-status" aria-live="polite">Copiado!</span>
                         </div>
                     </div>
                 </a>

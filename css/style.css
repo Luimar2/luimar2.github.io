@@ -1673,9 +1673,69 @@ hr {
     position: relative;
     display: flex;
     min-height: 48px;
+    align-items: center;
     border-width: 1px;
     border-color: #0000;
     padding: .5rem 1rem
+}
+
+.block-social-links-link.copy-email-link {
+    flex: 0 0 auto;
+    justify-content: center;
+    width: 52px;
+    padding-left: 1rem;
+    padding-right: 1rem
+}
+
+.copy-email-link .button-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap
+}
+
+.copy-email-link .copy-status {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + .4rem);
+    z-index: 60;
+    pointer-events: none;
+    border-radius: 9999px;
+    background-color: rgb(27 28 26);
+    color: rgb(250 250 250);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    opacity: 0;
+    padding: .4rem .55rem;
+    transform: translateY(4px);
+    transition: opacity .18s ease, transform .18s ease;
+    white-space: nowrap
+}
+
+.copy-email-link.is-copied .copy-status {
+    opacity: 1;
+    transform: translateY(0)
+}
+
+@media (max-width: 420px) {
+    .block-social-links {
+        padding: .25rem
+    }
+
+    .block-social-links-link {
+        padding-left: .75rem;
+        padding-right: .75rem
+    }
+
+    .block-social-links-link.copy-email-link {
+        width: 42px;
+        padding-left: .75rem;
+        padding-right: .75rem
+    }
 }
 
 /*.block-social-links-link:after {
@@ -1735,6 +1795,11 @@ hr {
     .block-social-links-link:hover {
         border-color: #ADADAD;
         background-color: #4B4747
+    }
+
+    .copy-email-link .copy-status {
+        background-color: rgb(232 232 232);
+        color: rgb(27 28 26)
     }
 
     /*.block-social-links-link:hover:before {
@@ -2215,25 +2280,17 @@ hr {
 }
 
 .menu-primary-navigation-container #primary-menu li.current-menu-item a {
-    /*border-color: #0000001a;*/
-    --tw-bg-opacity: 1;
-    background-color: rgb(238 28 56/var(--tw-bg-opacity));
+    background-color: transparent;
     --tw-text-opacity: 1;
-    color: rgb(241 241 241/var(--tw-text-opacity));
-    --tw-shadow: 0px 2px 3px 0px #00000008;
-    --tw-shadow-colored: 0px 2px 3px 0px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    box-shadow: none
 }
 
 .menu-primary-navigation-container #primary-menu li.current-menu-item a:hover {
-    /*border-color: #0000001a;*/
-    --tw-bg-opacity: 1;
-    background-color: rgb(178 14 39/var(--tw-bg-opacity));
+    background-color: transparent;
     --tw-text-opacity: 1;
     color: rgb(250 250 250/var(--tw-text-opacity));
-    --tw-shadow: 0px 2px 3px 0px #00000008;
-    --tw-shadow-colored: 0px 2px 3px 0px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
+    box-shadow: none
 }
 
 /*@media (prefers-color-scheme: dark) {
