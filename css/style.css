@@ -1669,6 +1669,11 @@ hr {
     }
 }
 
+.block-social-links {
+    overflow: visible;
+    position: relative
+}
+
 .block-social-links-link {
     position: relative;
     display: flex;
@@ -1714,6 +1719,10 @@ hr {
     transform: translateY(4px);
     transition: opacity .18s ease, transform .18s ease;
     white-space: nowrap
+}
+
+.copy-email-link.is-copied {
+    z-index: 70
 }
 
 .copy-email-link.is-copied .copy-status {
