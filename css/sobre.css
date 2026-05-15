@@ -173,3 +173,37 @@
         color: rgb(243 96 116);
     }
 }
+
+/* ============================================
+   FERRAMENTAS — label visível ao lado do ícone
+   ============================================ */
+
+/* Label de texto das ferramentas */
+.about-tool-label,
+.tool-label {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(82 82 91);
+    white-space: nowrap;
+}
+
+@media (prefers-color-scheme: dark) {
+    .about-tool-label,
+    .tool-label {
+        color: #ADADAD;
+    }
+}
+
+/* Row de ferramentas: permite quebrar em múltiplas linhas
+   quando há mais de 5-6 itens */
+.tools-grid {
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.tools-grid .block-social-links-link {
+    /* Cada item ocupa no mínimo ~30% em mobile,
+       e se ajusta naturalmente em desktop */
+    flex: 1 1 auto;
+    min-width: 120px;
+}
