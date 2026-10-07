@@ -383,3 +383,80 @@
         grid-template-columns: 1fr 1fr;
     }
 }
+
+/* ============================================
+   LIGHTBOX / ZOOM DE IMAGEM
+   ============================================ */
+
+/* Cursor indicativo nas imagens ampliáveis */
+.projeto-media-item img {
+    cursor: zoom-in;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.projeto-media-item img:hover {
+    opacity: 0.95;
+}
+
+/* Fundo do modal */
+.lightbox-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(15, 15, 15, 0.85);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+.lightbox-modal.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Imagem ampliada */
+.lightbox-content {
+    max-width: 95vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transform: scale(0.96);
+    transition: transform 0.25s ease;
+    cursor: zoom-out;
+}
+
+.lightbox-modal.is-open .lightbox-content {
+    transform: scale(1);
+}
+
+/* Botão de fechar (X) */
+.lightbox-close {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.lightbox-close:hover {
+    background-color: rgba(238, 28, 56, 0.8);
+}

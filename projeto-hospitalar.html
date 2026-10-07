@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Plataforma de Analytics e Data Warehouse Hospitalar de ponta a ponta — Luimar Mota.">
-    <title>Analytics e Data Warehouse Hospitalar — Luimar Mota</title>
+    <meta name="description" content="Estudo de Caso: Plataforma de Analytics e Gestão Hospitalar — Luimar Mota.">
+    <title>Plataforma de Analytics e Gestão Hospitalar — Luimar Mota</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/projeto.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -51,84 +51,84 @@
 
         <!-- Header do Projeto -->
         <section class="content-area projeto-header" aria-label="Visão geral do projeto">
-            <div class="projeto-badge">Analytics Engineering · Gestão Hospitalar</div>
-            <h1 class="home-heading">Plataforma de Analytics e Data Warehouse Hospitalar</h1>
+            <div class="projeto-badge">Estudo de Caso · Analytics Engineering</div>
+            <h1 class="home-heading">Plataforma de Analytics e Gestão Hospitalar</h1>
             <p class="projeto-lead">
-                Modelagem dimensional em Star Schema e dashboards executivos unificando mais de 55 mil atendimentos e 12 mil internações para identificar gargalos operacionais, otimizar ocupação de leitos e conter custos de permanência.
+                Projeto e implementação de um Data Warehouse analítico completo para um hospital geral de 134 leitos, cobrindo mais de 55.000 atendimentos e 12.000 internações ao longo de 2 anos.
             </p>
 
             <!-- Meta do projeto -->
             <div class="projeto-meta-grid">
                 <div class="projeto-meta-item">
-                    <span class="projeto-meta-label">Segmento</span>
-                    <span class="projeto-meta-value">Saúde / Hospital Geral (134 Leitos)</span>
+                    <span class="projeto-meta-label">Papel</span>
+                    <span class="projeto-meta-value">Analytics Engineer / BI Specialist</span>
                 </div>
                 <div class="projeto-meta-item">
-                    <span class="projeto-meta-label">Stack Tecnológica</span>
+                    <span class="projeto-meta-label">Segmento</span>
+                    <span class="projeto-meta-value">Saúde / Gestão Hospitalar</span>
+                </div>
+                <div class="projeto-meta-item">
+                    <span class="projeto-meta-label">Stack</span>
                     <span class="projeto-meta-value">Python · MySQL 8 · Docker · Metabase</span>
                 </div>
                 <div class="projeto-meta-item">
                     <span class="projeto-meta-label">Modelagem</span>
                     <span class="projeto-meta-value">Star Schema (Kimball) · SQL Views</span>
                 </div>
-                <div class="projeto-meta-item">
-                    <span class="projeto-meta-label">Entregáveis</span>
-                    <span class="projeto-meta-value">Pipeline ETL · DW · 4 Dashboards BI</span>
-                </div>
             </div>
         </section>
 
         <hr class="mt-12 md:mt-16">
 
-        <!-- Problema -->
+        <!-- 1. O Desafio de Negócio -->
         <section class="section projeto-section" aria-label="Problema de negócio resolvido">
-            <h2 class="section-heading">O Desafio de Negócio</h2>
+            <h2 class="section-heading">1. O Desafio de Negócio</h2>
             <p>
-                Em um hospital geral de médio porte (134 leitos distribuídos entre Enfermarias, UTIs, Maternidade e Urgência), a tomada de decisão descentralizada gerava três problemas operacionais críticos:
+                Em instituições hospitalares gerais, a ausência de uma base unificada de dados gera três problemas recorrentes:
             </p>
             <ul style="list-style: disc; margin-left: 1.5rem; margin-top: 0.75rem; line-height: 1.8;">
-                <li><strong>Gargalos invisíveis de fluxo:</strong> Longas esperas no Pronto Atendimento sem correlação clara com a taxa de ocupação dos leitos de retaguarda;</li>
-                <li><strong>Custos exponenciais de permanência:</strong> Internações prolongadas sem auditoria clínica gerando diárias de alto custo e escassez de vagas eletivas;</li>
-                <li><strong>Divergência de métricas:</strong> Áreas médica, financeira e administrativa operando com planilhas isoladas e sem uma fonte única da verdade (<em>Single Source of Truth</em>).</li>
+                <li><strong>Gargalos invisíveis:</strong> Filas prolongadas no Pronto Atendimento sem correlação clara com a capacidade de absorção dos leitos;</li>
+                <li><strong>Descontrole de diárias:</strong> Custos que escalam de forma exponencial conforme o tempo de permanência clínica se prolonga sem protocolo de desospitalização;</li>
+                <li><strong>Decisões fragmentadas:</strong> Setores financeiro, médico e operacional trabalhando com números divergentes.</li>
             </ul>
             <p style="margin-top: 1rem;">
-                O objetivo foi estruturar uma base analítica unificada capaz de correlacionar a jornada do paciente — desde a triagem na porta de entrada até o desfecho clínico e faturamento.
+                O objetivo deste projeto foi centralizar e modelar a jornada completa do paciente — desde o acolhimento na porta de entrada até o desfecho clínico e o faturamento.
             </p>
         </section>
 
         <hr class="mt-12 md:mt-16">
 
-        <!-- Solução e Arquitetura -->
+        <!-- 2. A Solução Construída -->
         <section class="section projeto-section" aria-label="Solução técnica desenvolvida">
-            <h2 class="section-heading">A Arquitetura da Solução</h2>
+            <h2 class="section-heading">2. A Solução Construída</h2>
             <p>
-                A infraestrutura analítica foi implementada em quatro camadas desacopladas, garantindo reprodutibilidade, governança e alto desempenho de consulta:
+                A arquitetura foi estruturada em quatro camadas desacopladas:
             </p>
             <div class="block-container projeto-entidades">
                 <div class="projeto-entidade-item">
-                    <div class="title">1. Pipeline ETL (Python)</div>
-                    <div class="description">Scripts automatizados com Pandas e SQLAlchemy para validação de integridade temporal, consistência clínica de desfechos e regras de negócio.</div>
+                    <div class="title">Pipeline ETL (Python)</div>
+                    <div class="description">Ingestão consistente, validação de regras de negócios hospitalares e garantia de integridade temporal e relacional.</div>
                 </div>
                 <div class="projeto-entidade-item">
-                    <div class="title">2. Data Warehouse (MySQL 8 / Docker)</div>
-                    <div class="description">Modelagem dimensional em Star Schema: tabelas fato (<code>fato_atendimentos</code>, <code>fato_internacoes</code>) e dimensões de pacientes, leitos, convênios, setores e tempo.</div>
+                    <div class="title">Armazenamento Dimensional (MySQL 8)</div>
+                    <div class="description">Modelagem em Star Schema (Metodologia Kimball) com 2 fatos (<code>fato_atendimentos</code> e <code>fato_internacoes</code>) e 5 dimensões estratégicas (<code>paciente</code>, <code>convenio</code>, <code>leito</code>, <code>setor</code>, <code>tempo</code>).</div>
                 </div>
                 <div class="projeto-entidade-item">
-                    <div class="title">3. Camada Semântica (SQL Views)</div>
-                    <div class="description">Views analíticas pré-agregadas (<code>vw_ocupacao_hospitalar</code>, <code>vw_performance_hospitalar</code>) para acelerar a renderização dos painéis sem onerar a CPU do banco.</div>
+                    <div class="title">Camada Semântica (SQL Views)</div>
+                    <div class="description">Regras de negócio encapsuladas no banco de dados para consolidação ágil de métricas de ocupação, rotatividade de leitos e receita.</div>
                 </div>
                 <div class="projeto-entidade-item">
-                    <div class="title">4. Business Intelligence (Metabase)</div>
-                    <div class="description">Quatro dashboards focados em públicos específicos: C-Level, Operações/Enfermagem, Finanças e Governança Clínica.</div>
+                    <div class="title">Visualização Analítica (Metabase)</div>
+                    <div class="description">Construção de 4 painéis desenhados para públicos específicos, da diretoria executiva à supervisão de enfermagem e custos.</div>
                 </div>
             </div>
         </section>
 
         <hr class="mt-12 md:mt-16">
 
-        <!-- Demonstração / Screenshots dos Dashboards -->
+        <!-- 3. Painéis e Descobertas Analíticas -->
         <section class="section projeto-media-section" aria-label="Dashboards e evidências analíticas">
-            <h2 class="section-heading">Painéis Estratégicos & Descobertas</h2>
+            <h2 class="section-heading">3. Painéis e Descobertas Analíticas</h2>
             <div class="projeto-media-wrap">
 
                 <!-- Dashboard 1: Executive Overview -->
@@ -139,7 +139,7 @@
                         loading="lazy"
                     >
                     <div class="projeto-media-caption">
-                        <strong>Visão Executiva (C-Level):</strong> Panorama geral com <strong>R$ 31,09M</strong> em receita acumulada, ocupação hospitalar de <strong>70,8%</strong>, tempo médio de permanência (ALOS) de <strong>4,6 dias</strong> e espera média de triagem de 50 minutos.
+                        <strong>Visão Executiva (Panorama C-Level):</strong> Centraliza os indicadores de saúde institucional: faturamento acumulado de R$ 31,09M, 70,8% de taxa de ocupação e permanência média de 4,6 dias.
                     </div>
                 </div>
 
@@ -152,7 +152,7 @@
                             loading="lazy"
                         >
                         <div class="projeto-media-caption">
-                            <strong>Operação & Capacidade:</strong> O Pronto Atendimento concentra 60,2% do fluxo com fila de 70 min (vs. 18 min na Emergência), enquanto a UTI Adulto opera no limite seguro (76% de ocupação).
+                            <strong>Operação e Capacidade:</strong> O Pronto Atendimento absorve 60,2% do volume hospitalar, gerando tempo médio de espera de 70 minutos (vs. 18 min na Emergência). A UTI Adulto opera com 76% de ocupação média, limite próximo ao de contingência.
                         </div>
                     </div>
                     <div class="projeto-media-item">
@@ -162,7 +162,7 @@
                             loading="lazy"
                         >
                         <div class="projeto-media-caption">
-                            <strong>Gestão Financeira:</strong> O custo médio de internação salta de R$ 5.546 (até 5 dias) para R$ 62.249 (> 15 dias), revelando uma escalada de despesas superior a 11x. SUS responde por 42,3% do faturamento.
+                            <strong>Gestão Financeira:</strong> Evidenciou o custo exponencial da permanência: internações de até 5 dias custam em média R$ 5.546, enquanto casos com mais de 15 dias atingem R$ 62.249. A gestão do tempo de permanência provou ser a alavanca primária de rentabilidade.
                         </div>
                     </div>
                 </div>
@@ -175,7 +175,7 @@
                         loading="lazy"
                     >
                     <div class="projeto-media-caption">
-                        <strong>Qualidade Assistencial:</strong> Rastreabilidade de 12.140 altas e monitoramento da taxa de mortalidade institucional (2,1%), com a UTI Adulto concentrando 51,3% dos óbitos com permanência de 7 dias.
+                        <strong>Qualidade Assistencial (Desfechos e Mortalidade):</strong> Acompanhamento de 12.140 altas e monitoramento da taxa de mortalidade institucional (2,1% geral). A UTI Adulto concentrou 51,3% dos óbitos com permanência média de 7 dias, fornecendo insumos clínicos para auditoria de gravidade.
                     </div>
                 </div>
 
@@ -184,59 +184,53 @@
 
         <hr class="mt-12 md:mt-16">
 
-        <!-- Resultados e Decisões de Negócio -->
-        <section class="section projeto-section" aria-label="Resultados analíticos e decisões executivas">
-            <h2 class="section-heading">Resultados & Decisões Acionáveis</h2>
-            <div class="projeto-resultados-grid">
-                <div class="projeto-resultado-item">
-                    <span class="projeto-resultado-numero">55.207</span>
-                    <span class="projeto-resultado-desc">Atendimentos estruturados em DW (Star Schema)</span>
+        <!-- 4. Competências Demonstradas -->
+        <section class="section projeto-section" aria-label="Competências técnicas demonstradas">
+            <h2 class="section-heading">4. Competências Demonstradas</h2>
+            <div class="block-container projeto-entidades">
+                <div class="projeto-entidade-item">
+                    <div class="title">Modelagem de Dados para BI</div>
+                    <div class="description">Arquitetura Star Schema balanceando granularidade detalhada de eventos com performance de agregação analítica.</div>
                 </div>
-                <div class="projeto-resultado-item">
-                    <span class="projeto-resultado-numero">R$ 31,09M</span>
-                    <span class="projeto-resultado-desc">Receita auditada com precisão por fonte pagadora</span>
+                <div class="projeto-entidade-item">
+                    <div class="title">SQL Avançado</div>
+                    <div class="description">Consultas analíticas, agregações temporais, CTEs e criação de Views semânticas desacopladas da camada de apresentação.</div>
                 </div>
-                <div class="projeto-resultado-item">
-                    <span class="projeto-resultado-numero">&gt;11x</span>
-                    <span class="projeto-resultado-desc">Aumento de custo identificado em internações &gt; 15 dias</span>
+                <div class="projeto-entidade-item">
+                    <div class="title">Engenharia e Reprodutibilidade</div>
+                    <div class="description">Ambientes conteinerizados via Docker no Linux, com automação de scripts de validação e carga em Python.</div>
+                </div>
+                <div class="projeto-entidade-item">
+                    <div class="title">Visão de Negócio Aplicada</div>
+                    <div class="description">Fluência em métricas setoriais de saúde: ALOS (tempo médio de permanência), Taxa de Ocupação, Giros de Leito, Desfechos e Mix de Pagadores.</div>
                 </div>
             </div>
-
-            <p style="margin-top: 2rem;">
-                A implementação do Data Warehouse viabilizou 4 intervenções executivas imediatas:
-            </p>
-            <ul style="list-style: disc; margin-left: 1.5rem; margin-top: 0.75rem; line-height: 1.8;">
-                <li><strong>Protocolo Fast-Track no PA:</strong> Desvio de casos de baixa complexidade para consultórios rápidos, mitigando o tempo de espera de 70 minutos;</li>
-                <li><strong>Comitê de Desospitalização Preventiva:</strong> Acompanhamento diário de pacientes internados há mais de 7 dias para evitar consumo ineficiente de diárias críticas;</li>
-                <li><strong>Transição Rápida de Leitos Críticos:</strong> Desocupação orientada da UTI Adulto para leitos de retaguarda semi-intensivos, assegurando margem de contingência operacional;</li>
-                <li><strong>Blindagem das Margens do SUS:</strong> Aplicação de protocolos de contenção de desperdícios na fonte pagadora de maior volume e expansão de procedimentos eletivos de maior margem para operadoras privadas.</li>
-            </ul>
-
-            <div style="margin-top: 2.5rem; text-align: center;">
-                <a href="https://github.com/Luimar2/data-project-hospital.git" target="_blank" rel="noopener noreferrer" class="projeto-cta-btn">
-                    Ver Código e Documentação no GitHub →
+        <!-- Visite o projeto -->
+            <div class="mt-5" aria-label="Visite o projeto no GitHub">
+                <a href="https://github.com/Luimar2/data-project-hospital.git" target="_blank" rel="noopener noreferrer" class="projeto-nav-link">
+                    <span class="projeto-nav-title">Ver Código e Documentação no GitHub →</span>
                 </a>
             </div>
         </section>
 
         <hr class="mt-12 md:mt-16">
 
-        <!-- CTA de Contato -->
+        <!-- Contato Direto -->
         <section class="section projeto-cta" aria-label="Contato profissional">
-            <h2 class="section-heading">Precisa de uma estrutura de dados semelhante?</h2>
-            <p>Seja para hospitais, clínicas ou empresas orientadas a dados: posso transformar processos fragmentados em uma arquitetura analítica robusta e escalável.</p>
+            <h2 class="section-heading">Vamos conversar sobre o seu projeto?</h2>
+            <p>Se você precisa estruturar ou otimizar pipelines, modelagem analítica ou relatórios executivos em sua operação, fique à vontade para entrar em contato.</p>
             <a href="https://wa.me/5531975200390" target="_blank" rel="noopener noreferrer" class="projeto-cta-btn">
-                Falar sobre o meu projeto →
+                Entrar em contato via WhatsApp →
             </a>
         </section>
 
         <!-- Navegação entre projetos -->
-        <section class="section projeto-nav" aria-label="Outros projetos">
+        <!-- section class="section projeto-nav" aria-label="Outros projetos">
             <a href="projeto-marketing.html" class="projeto-nav-link">
                 <span class="projeto-nav-label">Próximo projeto</span>
                 <span class="projeto-nav-title">Performance de Marketing →</span>
             </a>
-        </section>
+        </section-->
 
         <hr class="mt-12 md:mt-16">
 
@@ -339,6 +333,12 @@
         </section>
 
     </main>
+
+<!-- Modal Lightbox para visualização de imagem ampliada -->
+    <div id="lightboxModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Visualização ampliada de imagem">
+        <button id="lightboxClose" class="lightbox-close" type="button" aria-label="Fechar visualização">&times;</button>
+        <img id="lightboxImg" class="lightbox-content" src="" alt="">
+    </div>
 
     <script src="js/scripts.js"></script>
 </body>

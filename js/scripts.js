@@ -106,3 +106,60 @@ function copiarEmail(event) {
             console.error("Erro ao copiar:", err);
         });
 }
+
+// ============================================
+// Lightbox para imagens de projetos
+// ============================================
+document.addEventListener("DOMContentLoaded", function () {
+    var modal = document.getElementById("lightboxModal");
+    var modalImg = document.getElementById("lightboxImg");
+    var closeBtn = document.getElementById("lightboxClose");
+
+    if (!modal || !modalImg) return;
+
+    function openLightbox(src, alt) {
+        modalImg.src = src;
+        modalImg.alt = alt || "Visualização ampliada";
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden"; // Trava o scroll da página
+    }
+
+    function closeLightbox() {
+        modal.classList.remove("is-open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = ""; // Restaura o scroll
+        setTimeout(function () {
+            modalImg.src = "";
+        }, 250);
+    }
+
+    // Clique nas imagens da seção de mídia
+    document.querySelectorAll(".projeto-media-item img").forEach(function (img) {
+        img.addEventListener("click", function () {
+            openLightbox(this.src, this.alt);
+        });
+    });
+
+    // Fechar ao clicar no botão 'X'
+    if (closeBtn) {
+        closeBtn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            closeLightbox();
+        });
+    }
+
+    // Fechar ao clicar fora da imagem ou na própria imagem aberta
+    modal.addEventListener("click", function (e) {
+        if (e.target !== closeBtn) {
+            closeLightbox();
+        }
+    });
+
+    // Fechar com a tecla ESC
+    document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && modal.classList.contains("is-open")) {
+            closeLightbox();
+        }
+    });
+});
