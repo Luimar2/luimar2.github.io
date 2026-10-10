@@ -19,23 +19,23 @@ $(document).ready(function () {
 
 // Menu mobile: abre no toque, fecha ao tocar fora, selecionar item ou pressionar Esc.
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".dw-dropdown").forEach(function (dropdown) {
-        var trigger = dropdown.querySelector(".main-menu-button");
-        var menu = dropdown.querySelector(".dw-dropdown-content");
+    document.querySelectorAll(".menu-mobile").forEach(function (dropdown) {
+        var trigger = dropdown.querySelector(".menu-mobile-botao");
+        var menu = dropdown.querySelector(".menu-mobile-lista");
 
         if (!trigger || !menu) {
             return;
         }
 
         function setMenuOpen(isOpen) {
-            dropdown.classList.toggle("dw-dropdown-open", isOpen);
+            dropdown.classList.toggle("is-open", isOpen);
             trigger.setAttribute("aria-expanded", String(isOpen));
         }
 
         trigger.addEventListener("click", function (event) {
             event.preventDefault();
             event.stopPropagation();
-            setMenuOpen(!dropdown.classList.contains("dw-dropdown-open"));
+            setMenuOpen(!dropdown.classList.contains("is-open"));
         });
 
         menu.addEventListener("click", function (event) {

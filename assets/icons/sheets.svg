@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 24 24"
+   width="24"
+   height="24"
+   fill="#52525b"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="planilhas.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xml:space="preserve"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1" /><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="12.477488"
+     inkscape:cx="4.528155"
+     inkscape:cy="13.824898"
+     inkscape:current-layer="svg1" /><style
+     id="style1">@media (prefers-color-scheme: dark) { svg { fill: #adadad; } }</style><g
+     id="g1"
+     transform="matrix(0.11538462,0,0,0.11538462,-16.30746,-8.8355408)"
+     style="stroke-width:1.08333"><path
+       d="m 333.33131,100.57468 h -176 a 16,16 0 0 0 -16,16 v 128 a 16,16 0 0 0 16,16 h 176 a 16,16 0 0 0 16,-16 v -128 a 16,16 0 0 0 -16,-16 z m -112,96 v -32 h 48 v 32 z m 48,16 v 32 h -48 v -32 z m -112,-48 h 48 v 32 h -48 z m 64,-16 v -32 h 48 v 32 z m 64,16 h 48 v 32 h -48 z m 48,-16 h -48 v -32 h 48 z m -128,-32 v 32 h -48 v -32 z m -48,96 h 48 v 32 h -48 z m 176,32 h -48 v -32 h 48 z"
+       id="path1"
+       style="stroke-width:1.08333" /></g></svg>
