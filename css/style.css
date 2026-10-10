@@ -115,7 +115,7 @@ progress { vertical-align: initial; }
 ::-webkit-search-decoration { -webkit-appearance: none; }
 ::-webkit-file-upload-button { -webkit-appearance: button; font: inherit; }
 summary { display: list-item; }
-blockquote, dd, dl, figure, h1, h2, h3, h4, h5, h6, hr, p, pre { margin: 0; }
+blockquote, dd, dl, figure, h1, h2, h3, h4, h5, h6, p, pre { margin: 0; }
 fieldset, legend { margin: 0; padding: 0; }
 menu, ol, ul { list-style: none; margin: 0; padding: 0; }
 dialog { padding: 0; }
@@ -1142,7 +1142,7 @@ p:last-of-type { margin-bottom: 0; }
     color: rgb(27 28 26);
     font-weight: 400;
     text-decoration: underline;
-    text-underline-offset: 2px;
+    text-underline-offset: 1px;
 }
 
 .projeto-nav-link:hover .projeto-nav-title { color: rgb(238 28 56); }
@@ -1294,6 +1294,8 @@ p:last-of-type { margin-bottom: 0; }
 /* ==========================================================================
    6. CLASSES UTILITÁRIAS
    ========================================================================== */
+
+.mt-12 { margin-top: 3rem; }
 
 .sr-only {
     position: absolute;
