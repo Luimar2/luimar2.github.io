@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Clique nas imagens da seção de mídia
     document.querySelectorAll(".projeto-media-item img").forEach(function (img) {
         img.addEventListener("click", function () {
-            openLightbox(this.src, this.alt);
+            openLightbox(this.currentSrc || this.src, this.alt);
         });
     });
 
