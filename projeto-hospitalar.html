@@ -172,11 +172,16 @@
 
                 <!-- Dashboard 1: Executive Overview -->
                 <div class="projeto-media-item">
-                    <img
-                        src="https://raw.githubusercontent.com/Luimar2/data-project-hospital/refs/heads/main/dashboard/metabase/screenshots/01-executive-overview.png"
-                        alt="Painel Executive Overview - Gestão Hospitalar"
-                        loading="lazy"
-                    >
+                    <picture>
+                <!-- Imagem exibida apenas no Dark Mode -->
+                        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Luimar2/data-project-hospital/refs/heads/main/dashboard/metabase/screenshots/01-executive-overview-dark.png">
+                <!-- Imagem padrão para o Light Mode -->
+                        <img
+                            src="https://raw.githubusercontent.com/Luimar2/data-project-hospital/refs/heads/main/dashboard/metabase/screenshots/01-executive-overview.png"
+                            alt="Painel Executive Overview - Gestão Hospitalar"
+                            loading="lazy"
+                        >
+                    </picture>
                     <div class="projeto-media-caption">
                         <strong>Visão Executiva (Panorama C-Level):</strong> Centraliza os indicadores de saúde institucional: faturamento acumulado de R$ 31,09M, 70,8% de taxa de ocupação e permanência média de 4,6 dias.
                     </div>
@@ -185,21 +190,27 @@
                 <!-- Dashboards 2 e 3: Lado a Lado -->
                 <div class="projeto-media-wrap projeto-media-duas-colunas">
                     <div class="projeto-media-item">
-                        <img
-                            src="https://raw.githubusercontent.com/Luimar2/data-project-hospital/refs/heads/main/dashboard/metabase/screenshots/02-operational-analytics.png"
-                            alt="Painel Operational Analytics"
-                            loading="lazy"
-                        >
+                        <picture>
+                            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Luimar2/data-project-hospital/refs/heads/main/dashboard/metabase/screenshots/02-operational-analytics-dark.png">
+                            <img
+                                src="https://raw.githubusercontent.com/Luimar2/data-project-hospital/refs/heads/main/dashboard/metabase/screenshots/02-operational-analytics.png"
+                                alt="Painel Operational Analytics"
+                                loading="lazy"
+                            >
+                        </picture>
                         <div class="projeto-media-caption">
                             <strong>Operação e Capacidade:</strong> O Pronto Atendimento absorve 60,2% do volume hospitalar, gerando tempo médio de espera de 70 minutos (vs. 18 min na Emergência). A UTI Adulto opera com 76% de ocupação média, limite próximo ao de contingência.
                         </div>
                     </div>
                     <div class="projeto-media-item">
-                        <img
-                            src="https://raw.githubusercontent.com/Luimar2/data-project-hospital/refs/heads/main/dashboard/metabase/screenshots/03-financial-analytics.png"
-                            alt="Painel Financial Analytics"
-                            loading="lazy"
-                        >
+                        <picture>
+                            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Luimar2/data-project-hospital/refs/heads/main/dashboard/metabase/screenshots/03-financial-analytics-dark.png">
+                            <img
+                                src="https://raw.githubusercontent.com/Luimar2/data-project-hospital/refs/heads/main/dashboard/metabase/screenshots/03-financial-analytics.png"
+                                alt="Painel Financial Analytics"
+                                loading="lazy"
+                            >
+                        </picture>
                         <div class="projeto-media-caption">
                             <strong>Gestão Financeira:</strong> Evidenciou o custo exponencial da permanência: internações de até 5 dias custam em média R$ 5.546, enquanto casos com mais de 15 dias atingem R$ 62.249. A gestão do tempo de permanência provou ser a alavanca primária de rentabilidade.
                         </div>
@@ -208,11 +219,14 @@
 
                 <!-- Dashboard 4: Clinical Analytics -->
                 <div class="projeto-media-item">
-                    <img
-                        src="https://raw.githubusercontent.com/Luimar2/data-project-hospital/refs/heads/main/dashboard/metabase/screenshots/04-clinical-analytics.png"
-                        alt="Painel Clinical Analytics"
-                        loading="lazy"
-                    >
+                    <picture>
+                        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Luimar2/data-project-hospital/refs/heads/main/dashboard/metabase/screenshots/04-clinical-analytics-dark.png">
+                        <img
+                            src="https://raw.githubusercontent.com/Luimar2/data-project-hospital/refs/heads/main/dashboard/metabase/screenshots/04-clinical-analytics.png"
+                            alt="Painel Clinical Analytics"
+                            loading="lazy"
+                        >
+                    </picture>
                     <div class="projeto-media-caption">
                         <strong>Qualidade Assistencial (Desfechos e Mortalidade):</strong> Acompanhamento de 12.140 altas e monitoramento da taxa de mortalidade institucional (2,1% geral). A UTI Adulto concentrou 51,3% dos óbitos com permanência média de 7 dias, fornecendo insumos clínicos para auditoria de gravidade.
                     </div>
