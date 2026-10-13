@@ -440,6 +440,12 @@ a.cartao:hover .cartao-icone {
     border-radius: var(--raio-md);
 }
 
+/* Contato: ícones sempre à esquerda (Ferramentas mantém a distribuição padrão) */
+#contato .linha-icones {
+    justify-content: flex-start;
+    padding: .5rem 0;
+}
+
 .link-icone {
     position: relative;
     display: flex;
@@ -578,7 +584,7 @@ a.cartao:hover .cartao-icone {
 .sobre-foto-vazia-icone {
     width: 48px;
     height: 48px;
-    background: url("../assets/icons/avatar.svg") center / contain no-repeat;
+    background: url("../icons/avatar.svg") center / contain no-repeat;
 }
 
 .sobre-texto { flex: 1; }
@@ -813,7 +819,7 @@ a.cartao:hover .cartao-icone {
     width: 36px;
     height: 36px;
     opacity: .5;
-    background: url("../assets/icons/placeholder-midia.svg") center / contain no-repeat;
+    background: url("../icons/placeholder-midia.svg") center / contain no-repeat;
 }
 
 /* Lightbox (ids e classes de estado usados por js/scripts.js) */
